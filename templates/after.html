@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health report</title>
+</head>
+<style>
+    body {
+         margin: 0px;
+         padding: 0px;
+         background: url('https://media.istockphoto.com/id/1311189001/photo/3d-render-of-male-human-heart-anatomy.jpg?s=612x612&w=0&k=20&c=Stk6FSb1J2CQMhVRQ9mp-boPAnkx0Wo6p5Vn3HItFDo=');
+         background-color: black;
+         background-repeat: no-repeat;
+         background-position: left top; 
+         height: 100vh; 
+     }
+ 
+     .left {
+ 
+         color: rgb(255, 255, 255);
+         display: inline;
+         position: absolute;
+         left: 34px;
+         top: 18px;
+     }
+ 
+     .left img {
+         width: 34px;
+         filter: invert(100%);
+     }
+ 
+     .left div {
+         text-align: center;
+     }
+ 
+ 
+     .mid {
+         
+         color: rgb(255, 255, 255);
+         display: block;
+         width: 38%;
+         margin: 12px auto;
+         top: 30px;
+     }
+ 
+     .navbar {
+         display: inline block;
+     }
+ 
+     .navbar li {
+         display: inline;
+         margin-left: 35px;
+     }
+ 
+     .navbar li a {
+         text-decoration: none;
+         color: azure;
+     }
+ 
+     .navbar li a:hover {
+         color: blue;
+         text-decoration: underline;
+     }
+ 
+     .navbar li a:active {
+         color: rgb(0, 255, 0);
+     }
+ 
+ 
+ 
+     .right {
+ 
+         color: rgb(255, 255, 255);
+         display: inline;
+         position: absolute;
+         top: 20px;
+         display: inline-block;
+         right: 34px;
+     }
+     .btn {
+        background-color: green;
+        color: aliceblue;
+        border: 1px solid rgb(2, 2, 93);
+        margin: 2px;
+    }
+
+    .btn:hover {
+        background-color: blue;
+        color: aliceblue;
+    }
+
+     </style>
+     <header>
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXCpiYKfm11YUjU715AE4xto0XO6fzBiL8Q&usqp=CAU"
+                alt="">
+            <div>
+                report
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Report</a></li>
+                <li><a href="#">Health </a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"> Contact Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    
+
+    <h1>  PREDICTION :  </h1>
+
+    {% if data[0] == 0 %}
+        <h1>you are not having any heart disease</h1>  
+        <img src='V:\irs flower detection\src\healty_heart.jpeg'>
+    {% else %}
+        <h1>you are having a heart disease</h1>
+        <img src='src\Weak_heart.jpeg'>
+    {% endif %}
+    
+
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+    
+<body>
+    
+</body>
+</html>
